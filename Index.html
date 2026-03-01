@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Fighter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Assets\pantalla-tactil.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Floating background particles -->
+        <div class="bg-particles" id="bg-particles"></div>
+
+        <div class="page-content">
+
+            <!-- Header -->
+            <header>
+                <div class="title-main"> Selecciona tu Héroe</div>
+                <div class="title-sub">Selecciona con cuidado</div>
+            </header>
+
+            <!-- Animated grass strip -->
+            <div class="grass-divider" id="grass-divider"></div>
+
+            <!-- Subclass highlight filter -->
+            <div class="subfilter-wrap" id="subfilter-wrap">
+                <button class="subfilter-toggle" id="subfilter-toggle">
+                    <span id="subfilter-label">Filtrar por Subclase</span>
+                    <span class="subfilter-arrow">▾</span>
+                </button>
+                <div class="subfilter-dropdown" id="subfilter-dropdown">
+                    <button class="sub-btn active" data-sub="all">Todos</button>
+                </div>
+            </div>
+
+            <!-- Fighter counter -->
+            <div class="counter" id="counter"></div>
+
+            <!-- Sections built by JS -->
+            <main id="main-content"></main>
+
+            <!-- Selected fighter banner -->
+            <div class="selected-banner" id="banner"></div>
+            <img class="banner-avatar" id="banner-avatar" src="" alt="">
+            <div class="banner-text">
+                <span class="banner-label">Héroe Seleccionado</span>
+                <span class="banner-name" id="banner-name">_</span>
+                <div class="banner-badges" id="banner-badges"></div>
+            </div>
+            <button class="banner-clear" id="banner-clear">✕ Clear</button>
+        </div><!-- /page-content -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
